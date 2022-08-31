@@ -1,0 +1,18 @@
+# this file exists for bootstrap before application.yml
+# 配置中心默认会加载与应用同名的配置文件
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+      config:
+        group: DEFAULT_GROUP
+        server-addr: 127.0.0.1:8848
+        file-extension: yml
+#        extension-configs:
+#          - data-id: datasource.yml
+#            refresh: true
+#          - data-id: topic-database.yml
+#            refresh: true
+#          - data-id: jackon.yml
+#            refresh: true
